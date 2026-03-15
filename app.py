@@ -175,7 +175,7 @@ st.markdown("""
 # ── Load model ────────────────────────────────────────────────────────────────
 @st.cache_resource
 def load_model():
-    return joblib.load("saved_models/xgb_top5_features.pkl")
+    return joblib.load("model.pkl")
 
 model = load_model()
 
